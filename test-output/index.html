@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Both_platforms" class="navigator-link">
+              <span class="suite-name border-failed">Both platforms</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Both_platforms" class="navigator-link ">
+                    <span>testng-both.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Both_platforms" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Both_platforms" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Both_platforms" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Both_platforms" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Both_platforms" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Both_platforms" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Both_platforms" class="hide-methods failed suite-Both_platforms"> (hide)</a> <!-- hide-methods failed suite-Both_platforms -->
+                      <a href="#" panel-name="suite-Both_platforms" class="show-methods failed suite-Both_platforms"> (show)</a> <!-- show-methods failed suite-Both_platforms -->
+                    </span>
+                    <div class="method-list-content failed suite-Both_platforms">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidPassword">testInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidPassword">testInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidUsername">testInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidUsername">testInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Both_platforms -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Both_platforms" class="hide-methods passed suite-Both_platforms"> (hide)</a> <!-- hide-methods passed suite-Both_platforms -->
+                      <a href="#" panel-name="suite-Both_platforms" class="show-methods passed suite-Both_platforms"> (show)</a> <!-- show-methods passed suite-Both_platforms -->
+                    </span>
+                    <div class="method-list-content passed suite-Both_platforms">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testValidUser">testValidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Both_platforms" title="com.qa.tests.LoginTest" class="method navigator-link" hash-for-method="testValidUser">testValidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Both_platforms -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Both_platforms" class="panel Both_platforms">
+          <div class="suite-Both_platforms-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPassword">
+                  </a> <!-- testInvalidPassword -->
+                  <span class="method-name">testInvalidPassword</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Username and password do not match any user in this service.] but found []
+	at com.qa.tests.LoginTest.testInvalidPassword(LoginTest.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPassword">
+                  </a> <!-- testInvalidPassword -->
+                  <span class="method-name">testInvalidPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.id: errorMsg (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:172)
+	at com.qa.BaseTest.getAttribute(BaseTest.java:208)
+	at com.qa.BaseTest.getText(BaseTest.java:202)
+	at com.qa.pages.LoginPage.getErrorMessage(LoginPage.java:54)
+	at com.qa.tests.LoginTest.testInvalidPassword(LoginTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: errorMsg
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$MtmvGJfC.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@19d1ae3a (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [331c9883-ea7a-41ef-8deb-3a84a8fceeb6, findElement {value=errorMsg, using=id}]
+Capabilities {appium:app: /Users/d.stanisavljevic/Doc..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 15 Pro Max, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 300, appium:platformVersion: 17.5, appium:takesScreenshot: true, appium:udid: E294317A-EFEB-4A1B-AD12-F81..., appium:wdaLocalPort: 10001, appium:webStorageEnabled: false, appium:webkitDebugProxyPort: 11001, platformName: IOS}
+Session ID: 331c9883-ea7a-41ef-8deb-3a84a8fceeb6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 36 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidUsername">
+                  </a> <!-- testInvalidUsername -->
+                  <span class="method-name">testInvalidUsername</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Username and password do not match any user in this service.] but found []
+	at com.qa.tests.LoginTest.testInvalidUsername(LoginTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidUsername">
+                  </a> <!-- testInvalidUsername -->
+                  <span class="method-name">testInvalidUsername</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.id: errorMsg (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.BaseTest.waitForVisibility(BaseTest.java:172)
+	at com.qa.BaseTest.getAttribute(BaseTest.java:208)
+	at com.qa.BaseTest.getText(BaseTest.java:202)
+	at com.qa.pages.LoginPage.getErrorMessage(LoginPage.java:54)
+	at com.qa.tests.LoginTest.testInvalidUsername(LoginTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: errorMsg
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$TdyXFf1h.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@152caecc (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [331c9883-ea7a-41ef-8deb-3a84a8fceeb6, findElement {value=errorMsg, using=id}]
+Capabilities {appium:app: /Users/d.stanisavljevic/Doc..., appium:automationName: XCUITest, appium:databaseEnabled: false, appium:deviceName: iPhone 15 Pro Max, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 300, appium:platformVersion: 17.5, appium:takesScreenshot: true, appium:udid: E294317A-EFEB-4A1B-AD12-F81..., appium:wdaLocalPort: 10001, appium:webStorageEnabled: false, appium:webkitDebugProxyPort: 11001, platformName: IOS}
+Session ID: 331c9883-ea7a-41ef-8deb-3a84a8fceeb6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 36 more
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Both_platforms-class-failed -->
+          <div class="suite-Both_platforms-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUser">
+                  </a> <!-- testValidUser -->
+                  <span class="method-name">testValidUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidUser">
+                  </a> <!-- testValidUser -->
+                  <span class="method-name">testValidUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Both_platforms-class-passed -->
+        </div> <!-- panel Both_platforms -->
+        <div panel-name="test-xml-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/d.stanisavljevic/Documents/myProjects/appium/intellyj/tddmobileframework/testng-both.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Both platforms&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Android&quot;&gt;
+    &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;chromeDrivePort&quot; value=&quot;11000&quot;/&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;13.0&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;android&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel 5&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;10000&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Android --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;iOS&quot;&gt;
+    &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;webkitDebugProxyPort&quot; value=&quot;11001&quot;/&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;17.5&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;2222222222&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;iPhone 15 Pro Max&quot;/&gt;
+    &lt;parameter name=&quot;wdaLocalPort&quot; value=&quot;10001&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- iOS --&gt;
+&lt;/suite&gt; &lt;!-- Both platforms --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Both platforms</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Android (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">iOS (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Both platforms</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Both platforms</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Both_platforms');
+function tableData_Both_platforms() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testInvalidPassword')
+data.setCell(0, 2, 'com.qa.tests.LoginTest')
+data.setCell(0, 3, 22394);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInvalidUsername')
+data.setCell(1, 2, 'com.qa.tests.LoginTest')
+data.setCell(1, 3, 19241);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidUser')
+data.setCell(2, 2, 'com.qa.tests.LoginTest')
+data.setCell(2, 3, 7182);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testInvalidPassword')
+data.setCell(3, 2, 'com.qa.tests.LoginTest')
+data.setCell(3, 3, 6387);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testValidUser')
+data.setCell(4, 2, 'com.qa.tests.LoginTest')
+data.setCell(4, 3, 4200);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInvalidUsername')
+data.setCell(5, 2, 'com.qa.tests.LoginTest')
+data.setCell(5, 3, 4161);
+window.suiteTableData['Both_platforms']= { tableData: data, tableDiv: 'times-div-Both_platforms'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Both_platforms">
+              </div> <!-- times-div-Both_platforms -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Both platforms</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPassword</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">This is a sample screenshot</span>
+                <span class="reporter-method-output"><a href = 'null/screenshots_android_13.0_Pixel 5/2025-01-04-18-53-05/LoginTest/testInvalidPassword.png'><img src ='null/screenshots_android_13.0_Pixel 5/2025-01-04-18-53-05/LoginTest/testInvalidPassword.png' height=100 width = 100/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidUsername</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">This is a sample screenshot</span>
+                <span class="reporter-method-output"><a href = 'null/screenshots_android_13.0_Pixel 5/2025-01-04-18-53-05/LoginTest/testInvalidUsername.png'><img src ='null/screenshots_android_13.0_Pixel 5/2025-01-04-18-53-05/LoginTest/testInvalidUsername.png' height=100 width = 100/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidUsername</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">This is a sample screenshot</span>
+                <span class="reporter-method-output"><a href = 'null/screenshots_iOS_17.5_iPhone 15 Pro Max/2025-01-04-18-53-05/LoginTest/testInvalidUsername.png'><img src ='null/screenshots_iOS_17.5_iPhone 15 Pro Max/2025-01-04-18-53-05/LoginTest/testInvalidUsername.png' height=100 width = 100/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPassword</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">This is a sample screenshot</span>
+                <span class="reporter-method-output"><a href = 'null/screenshots_iOS_17.5_iPhone 15 Pro Max/2025-01-04-18-53-05/LoginTest/testInvalidPassword.png'><img src ='null/screenshots_iOS_17.5_iPhone 15 Pro Max/2025-01-04-18-53-05/LoginTest/testInvalidPassword.png' height=100 width = 100/></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Both_platforms" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(true, android, 13.0, Pixel 5, emulator-5554, 10000, 11000, iOSOnly, iOSOnly)</span>
+                <span class="method-start">8613 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(true, iOS, 17.5, iPhone 15 Pro Max, 2222222222, androidOnly, androidOnly, 10001, 11001)</span>
+                <span class="method-start">8613 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testInvalidPassword())</span>
+                <span class="method-start">17458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPassword</span>
+                <span class="method-start">19203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testInvalidPassword status=FAILURE method=LoginTest.testInvalidPassword()[pri:0, in...)</span>
+                <span class="method-start">26273 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testInvalidUsername())</span>
+                <span class="method-start">27280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidUsername</span>
+                <span class="method-start">28003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testInvalidPassword())</span>
+                <span class="method-start">32524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testInvalidUsername status=FAILURE method=LoginTest.testInvalidUsername()[pri:0, in...)</span>
+                <span class="method-start">32864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testValidUser())</span>
+                <span class="method-start">33806 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidUser</span>
+                <span class="method-start">34554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPassword</span>
+                <span class="method-start">37736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testValidUser status=SUCCESS method=LoginTest.testValidUser()[pri:0, instance:com.q...)</span>
+                <span class="method-start">38755 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">40457 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testInvalidPassword status=FAILURE method=LoginTest.testInvalidPassword()[pri:0, in...)</span>
+                <span class="method-start">60378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testInvalidUsername())</span>
+                <span class="method-start">61116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidUsername</span>
+                <span class="method-start">66078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testInvalidUsername status=FAILURE method=LoginTest.testInvalidUsername()[pri:0, in...)</span>
+                <span class="method-start">85562 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.qa.tests.LoginTest.testValidUser())</span>
+                <span class="method-start">86458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidUser</span>
+                <span class="method-start">91386 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testValidUser status=SUCCESS method=LoginTest.testValidUser()[pri:0, instance:com.q...)</span>
+                <span class="method-start">98569 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">99016 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">100139 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.qa.listeners.TestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Platform13">
+        <classes>
+            <class name="com.qa.tests.ProductsTest">
+                <methods>
+                    <include name="testValidateProductsOnProductDetailPageIOS"/>
+                </methods>
+            </class>
+<!--            <class name="com.qa.tests.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="testInvalidUsername"/>-->
+<!--                    <include name="testInvalidPassword"/>-->
+<!--                    <include name="testValidUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <parameter name="emulator" value="true"></parameter>-->
+<!--            <parameter name="platformName" value="android"></parameter>-->
+<!--            <parameter name="platformVersion" value="13.0"></parameter>-->
+<!--            <parameter name="deviceName" value="any"></parameter>-->
+<!--            <parameter name="udid" value="2222222222"></parameter>-->
+
+            <parameter name="emulator" value="true"></parameter>
+            <parameter name="udid" value="2222222222"></parameter>
+            <parameter name="platformName" value="iOS"></parameter>
+            <parameter name="platformVersion" value="17.5"></parameter>
+            <parameter name="deviceName" value="iPhone 15 Pro Max"></parameter>
+        </classes>
+    </test>
+<!--    <test verbose="2" preserve-order="true" name="Platform12">-->
+<!--        <parameter name="platformName" value="android"></parameter>-->
+<!--        <parameter name="platformVersion" value="12.0"></parameter>-->
+<!--        <parameter name="deviceName" value="any"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="qa.Test1"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

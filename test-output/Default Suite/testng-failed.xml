@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="tddmobileframework(failed)">
+    <classes>
+      <class name="com.qa.tests.ProductsTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="testValidateProductsOnProductDetailPage"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductsTest -->
+      <class name="com.qa.tests.LoginTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="testInvalidUsername"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.LoginTest -->
+    </classes>
+  </test> <!-- tddmobileframework(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

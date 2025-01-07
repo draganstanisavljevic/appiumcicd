@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Platform13(failed)" verbose="0">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="17.5"/>
+    <parameter name="udid" value="2222222222"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="deviceName" value="iPhone 15 Pro Max"/>
+    <classes>
+      <class name="com.qa.tests.ProductsTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="testValidateProductsOnProductDetailPageIOS"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.qa.tests.ProductsTest -->
+    </classes>
+  </test> <!-- Platform13(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
